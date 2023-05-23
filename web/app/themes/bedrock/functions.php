@@ -65,7 +65,7 @@ add_action( 'admin_bar_menu', 'bedrock_options_adminbar', 999 );
 add_filter(
 	'graphql_jwt_auth_secret_key',
 	function() {
-		return 'k.?z`sP6#$u9+/4NXYUK8u#)YtAmhf2<|e`HNeLg,WPee*i?F@MkLzi=6+87qx>^';
+		return 'your-refresh-token';
 	}
 );
 
