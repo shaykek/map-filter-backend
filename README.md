@@ -1,4 +1,4 @@
-# Map filter backenD using: Docker, Lando, Wordpress Bedrock, ACF, and WP GraphQL
+# Map filter backend using: Docker, Lando, Wordpress Bedrock, ACF, and WP GraphQL
 
 <h2>HOW TO INSTALL</h2>
 <ul>
