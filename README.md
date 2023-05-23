@@ -95,3 +95,6 @@ The response should contain your refreshToken. copy it and pass to NextJs .env.l
 To stop lando server run <code>lando stop</code>
 
 
+<h3>Wordpress Admin Setup</h3>
+In Theme options define map settings, theme colors, google maps api key.
+Add new Branches and set branch details: phone, opening hours, address, gallery, category
