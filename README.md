@@ -56,8 +56,6 @@ LOGGED_IN_SALT=
 NONCE_SALT=
 ```
 
-After installation done run script <code>lando start</code><br>
-To stop lando server run <code>lando stop</code>
 
 ** Pass app url to the frontend .env.local NEXT_PUBLIC_WORDPRESS_API_URL constant, example:<br>
   <code>NEXT_PUBLIC_WORDPRESS_API_URL=http://localhost:00000/wp</code>
@@ -76,7 +74,9 @@ To stop lando server run <code>lando stop</code>
 <li>In the .env file generate the tokens from here:https://roots.io/salts.html</li>
 <li>Afte updating the .env file, copy the NONCE_SALT.</li>
 <li>In functions.php locate graphql_jwt_auth_secret_key filter and add the NONCE_SALT token.</li>
-<li>Open graphql IDE from WordPress admin and run the query below to generate refresh token. Don't forget to change your credentials
+<li>Open graphql IDE from WordPress admin and run the query below to generate refresh token. Don't forget to change your credentials </li>
+    </ul>
+ 
 ```
 mutation LoginUser {
   login(
@@ -88,6 +88,10 @@ mutation LoginUser {
 
 }
 ```
-  </li>
-<li>The response should contain your refreshToken. copy it and pass to NextJs .env.local file constant: NEXT_PUBLIC_WORDPRESS_AUTH_REFRESH_TOKEN</li>
- </ul>
+ 
+The response should contain your refreshToken. copy it and pass to NextJs .env.local file constant: NEXT_PUBLIC_WORDPRESS_AUTH_REFRESH_TOKEN
+ 
+ After installation done run script <code>lando start</code><br>
+To stop lando server run <code>lando stop</code>
+
+
