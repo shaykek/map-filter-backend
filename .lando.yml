@@ -1,0 +1,4 @@
+name: bedrock2
+recipe: wordpress
+config:
+  webroot: web
