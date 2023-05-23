@@ -17,6 +17,7 @@ define( 'THEME_VER', wp_get_theme()->get( 'Version' ) );
  * Includes
  */
 get_template_part( 'admin/post-types' ); // Post Types
+get_template_part( 'admin/acf' ); // ACF Fields
 
 
 /**
